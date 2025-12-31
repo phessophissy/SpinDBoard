@@ -1,0 +1,21 @@
+{
+  "name": "spindboard",
+  "version": "1.0.0",
+  "description": "Spinning Board Game on Base Chain",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:base": "hardhat run scripts/deploy.js --network base",
+    "deploy:baseSepolia": "hardhat run scripts/deploy.js --network baseSepolia",
+    "interact": "hardhat run scripts/interact.js --network base",
+    "interact:baseSepolia": "hardhat run scripts/interact.js --network baseSepolia"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.0",
+    "dotenv": "^16.3.1"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0"
+  }
+}
