@@ -1581,3 +1581,23 @@
     background: var(--primary);
     border-radius: 50%;
 }
+
+.tag {
+    display: inline-block;
+    padding: 4px 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.tag-primary {
+    background: rgba(99, 102, 241, 0.2);
+    color: var(--primary);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
