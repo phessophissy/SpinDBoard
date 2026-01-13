@@ -995,3 +995,21 @@
     height: 48px;
     border-radius: 50%;
 }
+
+.ribbon {
+    position: absolute;
+    top: 16px;
+    right: -32px;
+    background: var(--secondary);
+    color: var(--bg-dark);
+    padding: 4px 40px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    transform: rotate(45deg);
+    z-index: 10;
+}
+
+.ribbon-container {
+    position: relative;
+    overflow: hidden;
+}
