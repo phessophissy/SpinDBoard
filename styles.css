@@ -1485,3 +1485,22 @@
     height: 1px;
     background: rgba(255, 255, 255, 0.1);
 }
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.875rem;
+}
+
+.breadcrumb-item {
+    color: var(--text-muted);
+}
+
+.breadcrumb-item:last-child {
+    color: var(--text-light);
+}
+
+.breadcrumb-separator {
+    color: var(--text-muted);
+}
