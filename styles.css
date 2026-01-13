@@ -1285,3 +1285,29 @@
 .breadcrumb-separator {
     color: var(--text-muted);
 }
+
+.pagination {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.page-item {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: var(--bg-card);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.page-item.active {
+    background: var(--primary);
+}
+
+.page-item:hover:not(.active) {
+    background: rgba(99, 102, 241, 0.2);
+}
