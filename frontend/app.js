@@ -31,3 +31,33 @@ async function connectWallet() {
         console.error('Connection error:', error);
     }
 }
+
+async function loadGameInfo() {
+    try {
+        const game = await contract.getCurrentGame();
+        const statusNames = ['Waiting', 'Spinning', 'Completed'];
+        
+        document.getElementById('gameInfo').innerHTML = `
+            <div class="game-stats">
+                <div class="stat">
+                    <span class="stat-label">Game ID</span>
+                    <span class="stat-value">#${game.gameId}</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Status</span>
+                    <span class="stat-value">${statusNames[game.status]}</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Players</span>
+                    <span class="stat-value">${game.playerCount}/10</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Prize Pool</span>
+                    <span class="stat-value">${ethers.utils.formatEther(game.totalPool)} ETH</span>
+                </div>
+            </div>
+        `;
+    } catch (error) {
+        console.error('Error loading game:', error);
+    }
+}
