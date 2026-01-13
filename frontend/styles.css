@@ -61,3 +61,11 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
 }
+
+.main {
+    flex: 1;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
