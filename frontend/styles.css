@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #6366f1;
+    --primary-dark: #4f46e5;
+    --secondary: #f59e0b;
+    --bg-dark: #0f0f1a;
+    --bg-card: #1a1a2e;
+    --text: #ffffff;
+    --text-muted: #94a3b8;
+}
