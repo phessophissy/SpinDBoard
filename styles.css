@@ -1616,3 +1616,37 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.result-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+.result-overlay.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.result-content {
+    text-align: center;
+}
+
+.result-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.result-title.winner {
+    color: var(--secondary);
+    text-shadow: 0 0 30px rgba(245, 158, 11, 0.5);
+}
