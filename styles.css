@@ -775,3 +775,8 @@
 ::-webkit-scrollbar-thumb:hover {
     background: var(--primary-dark);
 }
+
+::selection {
+    background: var(--primary);
+    color: white;
+}
