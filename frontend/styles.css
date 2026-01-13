@@ -152,3 +152,10 @@ body {
     font-weight: 700;
     color: var(--secondary);
 }
+
+.btn-group {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+    justify-content: center;
+}
