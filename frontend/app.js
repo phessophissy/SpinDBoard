@@ -61,3 +61,5 @@ async function loadGameInfo() {
         console.error('Error loading game:', error);
     }
 }
+
+document.getElementById('connectBtn').addEventListener('click', connectWallet);
