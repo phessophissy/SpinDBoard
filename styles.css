@@ -1013,3 +1013,24 @@
     position: relative;
     overflow: hidden;
 }
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.table th {
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.table tr:hover {
+    background: rgba(99, 102, 241, 0.05);
+}
